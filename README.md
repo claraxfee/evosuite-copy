@@ -15,6 +15,8 @@ LLM Generation Stage:
 Our goal: Given a prompt and certain sections of buggy code, the LLM generates a pool of primatives which are more likely to trigger the given bug. 
 Example: Give LLM class constructors, buggy method, class variables. Vary the language of the prompt. Decide which inputs are the most effective. 
 
+Remember: in Evosuite, there is a different constant pool for each primitive (ints, doubles, floats etc). So, play around with asking it to generate the list of int inputs, then doubles, etc---in a way that can be easily parsed!! 
+
 . 
 
 . 
